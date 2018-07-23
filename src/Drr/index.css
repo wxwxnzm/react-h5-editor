@@ -1,0 +1,159 @@
+.z-drr-container {
+    position: absolute
+}
+
+.z-drr-container *,
+.z-drr-container :after,
+.z-drr-container :before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+
+.z-draggable:hover {
+    cursor: move
+}
+
+.z-rotateable-handle {
+    position: absolute;
+    left: 50%;
+    top: -36px;
+    width: 1px;
+    height: 36px;
+    margin-left: -.5px;
+    background-color: #32a6d0;
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWUlEQVQ4T6WT0U3DQAyGf/sGoBuQDcjp7p2wQTsBbNCOABMAE5BuwAjpe09XJqAjlAFyRq5yIUkRKuCXSIn92f79h/DPoGl9jLFIKS0BzAEU+l1EdgBqY8zaWnvQnLZtS+/96wgQQrgD8PLDUHsADwAeAbw556oeMCwWkQ8iqpn5NaVUikhJRLcT8KYHdGO/dwkbZp7rqMOCEMKq65xffwFCCE8AltrZGFNMi7sGEcBsAB0BdLdLAM/OOe00ihhjlVK6n7yunXP1UYMQguiTmW+stc1vLjsCiMhCT/MXgN75SkTW3ns95dmRJ+gVZmZrrVXgSWy327kxphmKfATEGGcpJS1SIQ/MvJhqkc+orvTe20zvjRRjLNu2bYjoItuXiBoRKYiozLZWBzJzlacYWVkhKSX1xPV3K6hGxpjVyQrTZN2161qJyJ6Idmpra636ZRQnf+PZ8neJn9q+rxFGGvPWAAAAAElFTkSuQmCC) 8 8, default
+}
+
+.z-rotateable-handle:after {
+    content: " ";
+    top: 0;
+    left: 0;
+    margin-left: -5.5px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #32a6d0;
+    border-radius: 50%;
+    background: #32a6d0
+}
+
+.z-resizeable-handle {
+    display: none;
+    position: absolute
+}
+
+.z-handle-ne,
+.z-handle-nw,
+.z-handle-se,
+.z-handle-sw {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #32a6d0;
+    border-radius: 50%;
+    background: #fff
+}
+
+.z-handle-nw {
+    top: -6px;
+    left: -6px;
+    cursor: nw-resize
+}
+
+.z-handle-ne {
+    top: -6px;
+    right: -6px;
+    cursor: ne-resize
+}
+
+.z-handle-sw {
+    bottom: -6px;
+    left: -6px;
+    cursor: sw-resize
+}
+
+.z-handle-se {
+    bottom: -6px;
+    right: -6px;
+    cursor: se-resize
+}
+
+.z-handle-e:after,
+.z-handle-n:after,
+.z-handle-s:after,
+.z-handle-w:after {
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #32a6d0;
+    border-radius: 50%;
+    background: #fff
+}
+
+.z-handle-n {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border-top: 1px solid #32a6d0;
+    cursor: n-resize
+}
+
+.z-handle-n:after {
+    bottom: 0;
+    left: 50%;
+    margin-left: -6px
+}
+
+.z-handle-w {
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    border-left: 1px solid #32a6d0;
+    cursor: w-resize
+}
+
+.z-handle-w:after {
+    top: 50%;
+    right: 0;
+    margin-top: -6px
+}
+
+.z-handle-e {
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    border-right: 1px solid #32a6d0;
+    cursor: e-resize
+}
+
+.z-handle-e:after {
+    top: 50%;
+    left: 0;
+    margin-top: -6px
+}
+
+.z-handle-s {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border-bottom: 1px solid #32a6d0;
+    cursor: s-resize
+}
+
+.z-handle-s:after {
+    top: 0;
+    left: 50%;
+    margin-left: -6px
+}
+
+.z-active {
+    z-index: 999
+}
